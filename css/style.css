@@ -1,0 +1,67 @@
+a {
+    text-decoration: none;
+    text-align: center;
+    font-size: 150%;
+    color: white;
+    padding: 10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+a:hover {
+    background-image: linear-gradient( -90deg, hsl(356, 70%, 50%), hsl(356, 14%, 50%));
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    display: inline-block;
+    margin: 10px;
+    margin-right: 40px;
+}
+
+li:nth-child(1) {
+    animation: zalipayu 5s infinite;
+    position: relative;
+}
+
+body {
+    background-image: url(../src/img/1.jpg);
+    display: cover;
+}
+
+@keyframes zalipayu {
+    0% {
+        top: 0px;
+        left: 0px;
+        background: red;
+    }
+    25% {
+        top: 0px;
+        left: 100px;
+        background: blue;
+    }
+    50% {
+        top: 0px;
+        left: 400px;
+        background: yellow;
+    }
+    75% {
+        top: 0px;
+        left: 1000px;
+        background: green;
+    }
+    100% {
+        top: 0px;
+        left: 1200px;
+        background: red;
+    }
+}
+
+.navbar {
+    width: 100%;
+    height: 48px;
+    background-image: linear-gradient( 90deg, hsl(356, 70%, 50%), hsl(356, 14%, 50%));
+    box-shadow: 5px 5px 5px black;
+}
